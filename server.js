@@ -19,3 +19,15 @@ app.use("/api/users", usersRoutes);
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
+
+
+
+/*
+
+File	Purpose
+knexfile.js	Knex configuration using env variables
+knex.js	Initializes Knex and binds it to Objection
+migrations/*.js	Creates database tables
+models/User.js	Defines a model to interact with users table
+*/
